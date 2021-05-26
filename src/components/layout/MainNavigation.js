@@ -1,11 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styles from './MainNavigation.module.css';
 
 const MainNavigation = () => {
   return (
     <div className={styles.header}>
-      <h1 className={styles.logo}>Great Quotes</h1>
+      <h1 className={styles.logo}>
+        <Link to='/'>Great Quotes</Link>
+      </h1>
       <nav className={styles.nav}>
         <ul>
           <li>
