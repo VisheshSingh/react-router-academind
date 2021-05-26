@@ -38,6 +38,10 @@ const Comments = ({ quoteId }) => {
     );
   }
 
+  if (error) {
+    allComments = <p>{error}</p>;
+  }
+
   if (status === 'completed' && comments && comments.length > 0) {
     allComments = <CommentsList comments={comments} />;
   }
